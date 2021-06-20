@@ -1,11 +1,23 @@
 :root {
     --main-accent-color: #0065FC;
     --light-accent-color: #DEEBFF;
-    --main-bg-color: #F2F2F2;
+    --bg-color: #F2F2F2;
+
+    --bp-medium: 768px;
+    --bp-large: 992px;
+    --bp-xlarge: 1200px
 }
 
 body {
-    background-color: --main-bg-color;
+    background-color: #fff;
+}
+
+a {
+    color: var(--main-accent-color);
+}
+
+.inactive {
+    color: var(--light-accent-color);
 }
 
 nav {
@@ -27,4 +39,26 @@ nav a.logo {
 
 nav a.subscribe {
     text-align: right;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Medium devices */
+@media (min-width: var(--bp-medium)) {
+    
+}
+
+/* Large devices */
+@media (min-width: var(--bp-large)) {
+    
+}
+
+/* Extra large devices */
+@media (min-width: var(--bp-xlarge)) {
+    
 }
