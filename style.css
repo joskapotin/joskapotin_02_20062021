@@ -1,0 +1,30 @@
+:root {
+    --main-accent-color: #0065FC;
+    --light-accent-color: #DEEBFF;
+    --main-bg-color: #F2F2F2;
+}
+
+body {
+    background-color: --main-bg-color;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    flex-grow: 1;
+    min-width: 50%;
+    text-align: center;
+}
+
+nav a.logo {
+    text-align: left;
+}
+
+nav a.subscribe {
+    text-align: right;
+}
