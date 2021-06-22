@@ -47,17 +47,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1,h2,h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
     font-size: 1.4rem;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 h4 {
-    margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 small, .text_small {
@@ -83,13 +81,6 @@ footer {
 /* BUTTONS */
 button {
     white-space: nowrap;
-}
-
-.btn-more {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 /* NAVIGATION */
@@ -142,16 +133,28 @@ button {
     color: var(--main-accent-color);
 }
 
-/* SEARCH */
-.section-search {
-    padding-top: .5rem;
+/* SECTIONS COMMON*/
+.section {
+    padding-top: 34px;
+    padding-bottom: 26px;
 }
 
-.section-search header{
-    margin-bottom: 2rem;
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+/* SECTION SEARCH */
+.section-search {
+    padding-bottom: 16px;
+}
+.section-search h1{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .search-form {
+    margin-top: 34px;
     position: relative;
 }
 
@@ -196,9 +199,8 @@ button {
 
 /* FILTERS */
 .section-filters {
-    padding-bottom: 1rem;
+    padding-top: 0;
 }
-
 .list-filters {
     display: flex;
     flex-wrap: wrap;
@@ -268,31 +270,18 @@ button {
     line-height: 1.2;
 }
 
-/* SECTIONS COMMON*/
-.section-populaires,
-.section-hebergements,
-.section-activites {
-    padding-top: 1rem;
-    padding-bottom: 2.25rem;
-}
-
-.section-populaires h2,
-.section-hebergements h2,
-.section-activites h2 {
-    margin-bottom: 1.5rem;
-}
-
 /* ARTICLES COMMON*/
 article {
     clear: both;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0, .1) 0px 3px 15px;
 }
 
 article > a {
     display: block;
-    padding: 5px;
-    background-color: white;
-    border-radius: 20px;
     text-decoration: none;
     color: var(--primary-text-color);
 }
@@ -306,28 +295,27 @@ article img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 article h3 {
-    margin: 14px 0 0 0;
+    margin: 0;
+    font-size: 1rem;
 }
 
 article p {
-    margin: 0 0 0 0;
     font-size: .875rem;
 }
 
 article .rating {
     font-size: 12px;
+    letter-spacing: 1px;
     color: var(--main-accent-color);
 }
 
 /* SECTION POPULAIRES */
 .section-populaires {
     background-color: var(--bg-color);
-    padding-top: 1rem;
-    padding-bottom: 2.25rem;
 }
 
 .section-populaires h2 i {
@@ -343,19 +331,20 @@ article .rating {
 }
 
 .post-popular .post-thumbnail img {
-    width: 133px;
-    height: 127px;
+    width: 127px;
+    height: 134px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .post-popular .post-content {
-    margin-left: 1.25rem;
     display: flex;
     flex-direction: column;
+    padding: 10px 16px 8px 11px;
 }
 
 .post-popular .post-content p {
+    margin: 5px 0 0 0;
     flex-grow: 1;
 }
 
@@ -364,13 +353,52 @@ article .rating {
     flex-grow: 0;
 }
 
-/* SECTION HEBERGEMENTS & ACTIVITES*/
-.post-hebergements .post-thumbnail img,
-.post-activites .post-thumbnail img {
+/* SECTION HEBERGEMENTS */
+.post-hebergements .post-thumbnail img {
     width: 100%;
     height: 114px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.post-hebergements .post-content {
+    padding: 10px 11px 0;
+}
+
+.post-hebergements .post-content p {
+    margin: 2px 0 0;
+}
+
+.btn-more {
+    margin: 34px 0 0;
+    line-height: 1;
+}
+
+.btn-more a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* SECTION ACTIVITES */
+.section-activites {
+    padding-top: 30px;
+}
+.post-activites {
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.post-activites .post-thumbnail img {
+    width: 100%;
+    height: 134px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.post-activites .post-content {
+    padding: 22px 18px 16px;
 }
 
 /* FOOTER */
@@ -381,18 +409,22 @@ article .rating {
 }
 
 .footer section {
-    padding-top: 1rem;
+    padding-top: 8px;
+}
+
+.footer h4 {
+    margin-bottom: 0;
 }
 
 .footer ul {
-    margin: .5rem 0 0;
+    margin: 18px 0 0;
     padding: 0;
     list-style: none;
 }
 
 .footer li {
-    margin: 0;
-    padding: .425rem 0 0;
+    margin: 6px 0 0;
+    padding: 0;
 }
 
 .footer a {
