@@ -26,18 +26,18 @@ body {
 }
 
 /* TYPOGRAPHY */
-html {font-size: 100%;} /*16px*/
+html {font-size: 62.5%;}
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   line-height: 1.6;
+  font-size: 1.6rem;
   color: var(--primary-text-color);;
 }
 
 p {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 1.2rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -47,15 +47,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1,h2,h3 {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 small, .text_small {
@@ -98,8 +98,12 @@ button {
     cursor: pointer;
 }
 
-/* NAVIGATION */
+/* HEADER */
+header {
+    padding-top: 16px;
+}
 
+/* NAVIGATION */
 .main-navigation{
     list-style: none;
     padding: 0;
@@ -121,8 +125,12 @@ button {
 .main-navigation a {
     display: block;
     text-decoration: none;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.main-navigation a:hover {
+    text-decoration: underline;
 }
 
 .main-navigation .menu-item-logo {
@@ -176,10 +184,9 @@ button {
 .search-form label,
 .search-form input,
 .search-form button {
-    display: inline-block;
     height: 50px;
     line-height: 50px;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     border: 0;
     border-radius: 16px;
 }
@@ -200,8 +207,8 @@ button {
 .search-form input {
     font-family: 'Raleway', sans-serif;
     border: 1px solid var(--bg-color);
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 66px;
+    padding-right: 66px;
     font-weight: bold;
     width: 100%;
 }
@@ -210,6 +217,15 @@ button {
     right: 0;
     background-color: var(--main-accent-color);
     color: white;
+    transition: scale ease-in-out .25s;
+}
+
+.search-form button:hover {
+    scale: 1.15;
+}
+
+.search-form .btn-text {
+    display: none;
 }
 
 /* FILTERS */
@@ -239,7 +255,7 @@ button {
     z-index: 10;
     background-color: transparent;
     border: 2px solid var(--light-grey);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     padding: 0 18px 0 0;
     border-radius: 50vh;
@@ -256,7 +272,7 @@ button {
     border-radius: 50vh;
     background-color: var(--light-accent-color);
 
-    transition: width ease-in-out .5s;
+    transition: width ease-in-out .25s;
 }
 
 .btn-icon {
@@ -268,7 +284,6 @@ button {
 }
 
 .btn-text {
-    position: relative;
     line-height: 46px;
     margin-left: 12px;
 }
@@ -290,11 +305,11 @@ button {
     height: 24px;
     width: 24px;
     line-height: 24px;
-    font-size: .6rem;
+    font-size: 1.2rem;
     color: var(--main-accent-color);
     text-align: center;
     border: 1px solid var(--light-grey);
-    border-radius: 12px;
+    border-radius: 50vh;
 }
 
 .footer-filters p {
@@ -321,6 +336,10 @@ article > a {
     color: var(--primary-text-color);
 }
 
+article > a:hover h3 {
+    text-decoration: underline;
+}
+
 article picture {
     display: block;
 }
@@ -335,15 +354,15 @@ article img {
 
 article h3 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 article p {
-    font-size: .875rem;
+    font-size: 1.4rem;
 }
 
 article .rating {
-    font-size: 12px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--main-accent-color);
 }
@@ -413,7 +432,11 @@ article .rating {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.btn-more a:hover {
+    text-decoration: underline;
 }
 
 /* SECTION ACTIVITES */
@@ -467,6 +490,10 @@ article .rating {
     text-decoration: none;
 }
 
+.footer a:hover {
+    text-decoration: underline;
+}
+
 /* Medium devices */
 @media (min-width: var(--bp-medium)) {
     
@@ -474,7 +501,7 @@ article .rating {
 
 /* Large devices */
 @media (min-width: var(--bp-large)) {
-    
+    /* NAVIGATION */
 }
 
 /* Extra large devices */
