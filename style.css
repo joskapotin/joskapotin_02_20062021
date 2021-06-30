@@ -385,7 +385,7 @@ button {
 }
 
 /* ARTICLES COMMON*/
-article {
+.post {
     clear: both;
     border-radius: 20px;
     padding: 5px;
@@ -393,21 +393,21 @@ article {
     box-shadow: rgb(0, 0, 0, .1) 0px 3px 15px;
 }
 
-article > a {
+.post > a {
     display: block;
     text-decoration: none;
     color: var(--primary-text-color);
 }
 
-article > a:hover h3 {
+.post > a:hover h3 {
     text-decoration: underline;
 }
 
-article picture {
+.post picture {
     display: block;
 }
 
-article img {
+.post img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -415,16 +415,16 @@ article img {
     border-radius: 15px;
 }
 
-article h3 {
+.post h3 {
     margin: 0;
     font-size: 1.6rem;
 }
 
-article p {
+.post p {
     font-size: 1.4rem;
 }
 
-article .rating {
+.post .rating {
     font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--main-accent-color);
