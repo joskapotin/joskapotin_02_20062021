@@ -160,7 +160,7 @@ button {
 .section-activites,
 .section-populaires {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1f;
     row-gap: 11px;
 }
 
@@ -168,9 +168,9 @@ button {
     row-gap: 24px;
 }
 
-.section-hebergements h2,
-.section-activites h2,
-.section-populaires h2 {
+.section-hebergements .section-title,
+.section-activites .section-title,
+.section-populaires .section-title {
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -366,7 +366,7 @@ button {
 /* SEARCH INFO */
 .search-info {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .search-info span {
@@ -405,7 +405,7 @@ button {
     color: var(--primary-text-color);
 }
 
-.post > a:hover h3 {
+.post > a:hover .post-title {
     text-decoration: underline;
 }
 
@@ -421,7 +421,7 @@ button {
     border-radius: 15px;
 }
 
-.post h3 {
+.post .post-title {
     margin: 0;
     font-size: 1.6rem;
 }
@@ -444,7 +444,7 @@ button {
     padding-bottom: 40px;
 }
 
-.section-populaires h2 {
+.section-populaires .section-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -556,21 +556,13 @@ button {
 }
 
 /* Medium devices */
-@media (min-width: 768px) {}
-
-/* large devices */
-@media (min-width: 992px) {}
-
-/* Extra devices */
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
 
     /* LAYOUT */
     .page-content,
     .footer-content {
-        width: 1440px;
-        margin: 0 auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* HEADER LAYOUT */
@@ -593,41 +585,7 @@ button {
     .section-search {
         margin-top: 20px;
     }
-
-
-    /* MAIN LAYOUT */
-    .main-content {
-        display: grid;
-        grid-template-columns: repeat (3, 1fr);
-        grid-template-areas:    "hebergements hebergements populaires"
-                                "activites activites activites";
-        column-gap: 40px;
-    }
     
-    .main-content .section-hebergements {
-        margin-top: 0;
-    }
-
-    /* SECTIONS LAYOUT */
-    .section-populaires {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 33px;
-    }
-
-    .section-hebergements {
-        background-color: var(--bg-color);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .section-activites {
-        margin-top: 30px;
-        display: block;
-    }
-
-
     /* NAVIGATION */
     .main-navigation {
         align-items: flex-start;
@@ -684,7 +642,7 @@ button {
     .main-navigation .menu-item-activites.active a {
         border-top-color: var(--main-accent-color);
     }
-    
+
     /* SECTION SEARCH */
     .search-form {
         max-width: 420px;
@@ -704,6 +662,137 @@ button {
         display: block;
     }
 
+    /* SECTIONS LAYOUT */
+    .section-populaires {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 11px;
+    }
+
+    .section-populaires .section-title {
+        grid-column: span 4;
+    }
+
+    .post-popular {
+        grid-column: span 2;
+    }
+    
+    .post-popular:nth-last-of-type(1):nth-of-type(odd) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .section-hebergements,
+    .section-activites {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
+    }
+
+    .section-hebergements .section-title,
+    .section-activites .section-title {
+        grid-column: span 2;
+    }
+
+    
+    /* SECTIONS COMMON */
+    .section-populaires {
+        border-radius: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* FOOTER LAYOUT */
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+}
+
+/* large devices */
+@media (min-width: 992px) {
+
+    /* LAYOUT */
+    .page-content,
+    .footer-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* SECTIONS LAYOUT */
+    .section-populaires {
+        padding: 40px;
+        gap: 33px;
+    }
+    
+    .section-hebergements,
+    .section-activites {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .section-hebergements .section-title,
+    .section-activites .section-title {
+        grid-column: span 3;
+    }
+}
+
+/* Extra devices */
+@media (min-width: 1440px) {
+
+    /* MAIN LAYOUT */
+
+    .page-content,
+    .footer-content {
+        margin: 0 auto;
+        width: 1440px;
+    }
+    
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:    "hebergements hebergements populaires"
+                                "activites activites activites";
+        column-gap: 40px;
+    }
+    
+    .main-content .section-hebergements {
+        margin-top: 0;
+    }
+
+    /* SECTIONS LAYOUT */
+    .section-populaires {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 33px;
+    }
+
+    .section-populaires .section-title {
+        grid-column: auto;
+    }
+
+    .post-popular {
+        grid-column: auto;
+    }
+
+    .post-popular:nth-last-of-type(1):nth-of-type(odd) {
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+    
+    .section-hebergements {
+        padding: 40px;
+        background-color: var(--bg-color);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .section-activites {
+        margin-top: 30px;
+        display: block;
+    }
+    
     /* SECTION FILTERS */
     .section-filters {
         display: flex;
@@ -720,15 +809,15 @@ button {
         column-gap: 24px;
     }
 
-    /* SECTIONS COMMON */
-    .section-hebergements,
-    .section-populaires {
-        border-radius: 16px;
-        padding: 40px;
+    /* SEARCH INFO */
+    .search-info {
+        display: flex;
+        align-items: center;
     }
 
-    .section-hebergements h2,
-    .section-populaires h2{
+    /* SECTIONS COMMON */
+    .section-hebergements .section-title,
+    .section-populaires .section-title{
         margin-bottom: 0;
     }
 
@@ -737,7 +826,7 @@ button {
         background-color: var(--bg-color);
     }
 
-    .section-hebergements h2 {
+    .section-hebergements .section-title {
         grid-column: span 3;
     }
 
@@ -770,7 +859,7 @@ button {
         margin-bottom: 43px;
     }
 
-    .section-activites h2 {
+    .section-activites .section-title {
         column-span: all;
     }
 
