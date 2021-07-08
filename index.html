@@ -16,7 +16,7 @@
 <body>
   <div class="page-content">
     <header class="page-header">
-      <nav class="page-navigation">
+      <nav>
         <ul class="main-navigation">
           <li class="menu-item-logo">
             <a href="/"><img src="images/logo/Reservia.png" alt="Reservia" /></a>
@@ -33,52 +33,66 @@
         </ul>
       </nav>
 
-      <section class="section-banner">
+      <section class="section-search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
+
+        <div class="search-form">
+          <form action="#" method="post" name="location-search">
+            <label for="location">
+              <i class="fas fa-map-marker-alt"></i>
+            </label>
+            <input id="location" type="text" name="location" value="Marseille, France" aria-label="Search"/>
+            <button type="submit"><i class="fas fa-search"></i><span class="btn-text">Rechercher</span></button>
+          </form>
+        </div>
+
+        <div class="filters">
+          <h2>Filtres</h2>
+          <ul class="list-filters">
+            <li>
+              <button class="btn-filter">
+                <span class="btn-icon">
+                  <i class="fas fa-money-bill-wave"></i>
+                </span>
+                <span class="btn-text">Économique</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-filter">
+                <span class="btn-icon">
+                  <i class="fas fa-child"></i>
+                </span>
+                <span class="btn-text">Familial</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-filter">
+                <span class="btn-icon">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="btn-text">Romantique</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-filter">
+                <span class="btn-icon">
+                  <i class="fas fa-dog"></i>
+                </span
+                ><span class="btn-text">Animaux autorisés</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search-info">
+          <span class="fa-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-info fa-stack-1x"></i>
+          </span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </section>
-
-      <div class="section-search">
-        <form class="search-form" action="#" method="post" name="location-search">
-          <label for="location">
-            <i class="fas fa-map-marker-alt"></i>
-          </label>
-          <input id="location" type="text" name="location" value="Marseille, France" aria-label="Search"/>
-          <button type="submit"><i class="fas fa-search"></i><span class="btn-text">Rechercher</span></button>
-        </form>
-      </div>
-
-      <section class="section-filters">
-        <h3>Filtres</h3>
-        <ul class="list-filters">
-          <li>
-            <button class="btn-filter">
-              <span class="btn-icon"><i class="fas fa-money-bill-wave"></i></span><span
-                class="btn-text">Économique</span>
-            </button>
-          </li>
-          <li>
-            <button class="btn-filter">
-              <span class="btn-icon"><i class="fas fa-child"></i></span><span class="btn-text">Familial</span>
-            </button>
-          </li>
-          <li>
-            <button class="btn-filter">
-              <span class="btn-icon"><i class="fas fa-heart"></i></span><span class="btn-text">Romantique</span>
-            </button>
-          </li>
-          <li>
-            <button class="btn-filter">
-              <span class="btn-icon"><i class="fas fa-dog"></i></span><span class="btn-text">Animaux autorisés</span>
-            </button>
-          </li>
-        </ul>
-      </section>
-
-      <div class="search-info">
-        <span><i class="fas fa-info"></i></span>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
     </header>
 
     <main class="main-content">
@@ -248,7 +262,7 @@
           </article>
         </div>
 
-        <p class="btn-more"><a href="#">Afficher plus</a></p>
+        <a class="read-more" href="#">Afficher plus</a>
       </section>
       
       <section id="activites" class="section section-activites">
@@ -399,8 +413,7 @@
             <article class="post post-popular">
               <a href="#">
                 <div class="post-thumbnail">
-            
-            <!--                 <picture>
+                  <picture>
                     <source srcset="
                           images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg
                         " media="(min-width: 1200px)" />
@@ -412,8 +425,6 @@
                         " media="(min-width: 768px)" />
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre d'hotel" />
                   </picture>
-             -->
-                  <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre d'hotel" />
                 </div>
                 <div class="post-content">
                   <h3 class="post-title">Hôtel Le soleil du matin</h3>
@@ -429,8 +440,7 @@
             <article class="post post-popular">
               <a href="#">
                 <div class="post-thumbnail">
-            
-            <!--                 <picture>
+                 <picture>
                     <source srcset="
                           images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg
                         " media="(min-width: 1200px)" />
@@ -442,8 +452,6 @@
                         " media="(min-width: 768px)" />
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hotel" />
                   </picture>
-             -->
-                  <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hotel" />
                 </div>
                 <div class="post-content">
                   <h3 class="post-title">
@@ -462,7 +470,6 @@
             <article class="post post-popular">
               <a href="#">
                 <div class="post-thumbnail">
-            <!--
                   <picture>
                     <source srcset="
                           images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg
@@ -475,8 +482,6 @@
                         " media="(min-width: 768px)" />
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre d'hotel" />
                   </picture>
-                   -->
-                   <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre d'hotel" />
                 </div>
                 <div class="post-content">
                   <h3 class="post-title">Hôtel Tout bleu et Blanc</h3>
