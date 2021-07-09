@@ -142,7 +142,7 @@ button {
 .posts-activities,
 .posts-popular {
     display: grid;
-    grid-template-columns: 1f;
+    grid-template-columns: 1fr;
     row-gap: 11px;
 }
 
@@ -247,8 +247,8 @@ button {
 .search-form label {
     left: 0;
     background-color: var(--bg-color);
-    border-top-right-radius: 0x;
-    border-bottom-right-radius: 0x;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .search-form input {
