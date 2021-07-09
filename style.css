@@ -87,7 +87,7 @@ button {
 }
 
 .page-footer {
-    margin-top: 50px;
+    margin-top: 19px;
 }
 
 .section-search,
@@ -110,12 +110,12 @@ button {
 
 .main-content .section-hebergements {
     grid-area: hebergements;
-    margin-top: 40px;
+    margin-top: 18px;
 }
 
 .main-content .section-activites {
     grid-area: activites;
-    margin-top: 58px;
+    margin-top: 28px;
 }
 
 .main-content aside {
@@ -123,6 +123,12 @@ button {
 }
 
 /* SECTIONS LAYOUT */
+.section-hebergements,
+.section-activites,
+.section-populars {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .section-hebergements .section-title,
 .section-activites .section-title,
 .section-populars .section-title {
@@ -356,21 +362,19 @@ button {
 }
 
 /* ARTICLES COMMON*/
-.post > a {
-    display: block;
-    text-decoration: none;
+.post {
     color: var(--primary-text-color);
     border-radius: 20px;
     padding: 5px;
     background-color: white;
     box-shadow: rgb(0, 0, 0, .1) 0px 3px 15px;
-
+}
+.post > a {
+    display: block;
+    text-decoration: none;
 }
 
-.post > a:hover {
-    box-shadow: rgb(0, 0, 0, .5) 0px 3px 15px;
-}
-.post > a:hover .post-title {
+.post:hover .post-title {
     text-decoration: underline;
 }
 
@@ -409,8 +413,6 @@ button {
 /* SECTION POPULARS */
 .section-populars {
     background-color: var(--bg-color);
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .section-populars .section-title {
@@ -488,7 +490,7 @@ button {
 }
 
 .post-activites .post-content {
-    padding: 22px 18px 16px;
+    padding: 20px 18px 16px;
 }
 
 /* FOOTER */
@@ -520,11 +522,12 @@ button {
 }
 
 .page-footer a:hover {
+    color: var(--main-accent-color);
     text-decoration: underline;
 }
 
-/* Medium devices */
-@media (min-width: 768px) {
+/* small+ devices */
+@media (min-width: 700px) {
 
     /* LAYOUT */
     .page-header,
@@ -553,20 +556,6 @@ button {
     }
 
     /* SECTIONS LAYOUT */
-    .posts-popular {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-    }
-
-    .post-popular {
-        grid-column: span 2;
-    }
-    
-    .post-popular:nth-last-of-type(1):nth-of-type(odd) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
     .posts-hebergements,
     .posts-activities {
         display: grid;
@@ -574,13 +563,6 @@ button {
         gap: 30px;
     }
     
-    /* FOOTER LAYOUT */
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
-    }
-
     /* NAVIGATION */
     .main-navigation {
         align-items: flex-start;
@@ -672,6 +654,27 @@ button {
 
 }
 
+/* medium devices */
+@media (min-width: 768px) {
+
+    /* SECTIONS LAYOUT */
+    .posts-popular {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .post-popular {
+        grid-column: span 2;
+    }
+    
+    .post-popular:nth-last-of-type(1):nth-of-type(odd) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+
+}
+
 /* large devices */
 @media (min-width: 992px) {
 
@@ -683,7 +686,23 @@ button {
         padding-right: 40px;
     }
 
-    /* SECTIONS LAYOUT */
+    /* SECTIONS LAYOUT */        
+    .posts-hebergements,
+    .posts-activities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* FOOTER LAYOUT */
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+    
+}
+
+/* large+ devices */
+@media (min-width: 1200px){
     .posts-popular {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -696,16 +715,6 @@ button {
         grid-column-start: unset;
         grid-column-end: unset;
     }
-    
-    .post-popular .post-thumbnail img {
-        height: 160px;
-    }
-        
-    .posts-hebergements,
-    .posts-activities {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
 }
 
 /* Extra devices */
@@ -815,20 +824,24 @@ button {
         column-gap: 43px;
     }
 
-    .posts-activities .post-id-1 img {
+    .posts-activities .post-id-1 img,
+    .posts-activities .post-id-4 img {
         height: 390px;
+    }
+    .posts-activities .post-id-2 {
+        margin-bottom: 44px;
     }
 
     .posts-activities .post-id-2 img {
-        height: 180px;
+        height: 181px;
     }
 
     .posts-activities .post-id-3 img {
         height: 110px;
     }
 
-    .posts-activities .post-id-4 img {
-        height: 390px;
+    .posts-activities .post-id-5 {
+        margin-bottom: 41px;
     }
 
     .posts-activities .post-id-5 img {
@@ -836,11 +849,7 @@ button {
     }
 
     .posts-activities .post-id-6 img {
-        height: 150px;
-    }
-
-    .post-activites {
-        margin-bottom: 43px;
+        height: 153px;
     }
 
 }
