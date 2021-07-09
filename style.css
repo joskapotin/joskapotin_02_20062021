@@ -1,13 +1,3 @@
-/* 
-
-prochaine reunion
-git
-et
-voir le code
-
-*/
-
-
 :root {
     --main-accent-color: rgba(0, 101, 252, 1);
     --light-accent-color: #DEEBFF;
@@ -537,7 +527,8 @@ button {
 @media (min-width: 768px) {
 
     /* LAYOUT */
-    .page-content,
+    .page-header,
+    .main-content,
     .footer-content {
         padding-left: 20px;
         padding-right: 20px;
@@ -685,7 +676,8 @@ button {
 @media (min-width: 992px) {
 
     /* LAYOUT */
-    .page-content,
+    .page-header,
+    .main-content,
     .footer-content {
         padding-left: 40px;
         padding-right: 40px;
@@ -720,9 +712,11 @@ button {
 @media (min-width: 1440px) {
 
     /* LAYOUT */
-    .page-content,
+    .page-header,
+    .main-content,
     .footer-content {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 1440px;
     }
     
