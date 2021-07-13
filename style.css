@@ -317,7 +317,7 @@ button {
     border-radius: 50vh;
     background-color: var(--light-accent-color);
 
-    transition: width ease-in-out .25s;
+    transition: width ease-in-out .2s;
 }
 
 .btn-filter .btn-icon {
@@ -335,9 +335,8 @@ button {
 }
 
 .btn-filter:hover::before {
-    height: 50px;
-    width: 100%;
     left: 2px;
+    width: 100%;
 }
 
 /* SEARCH INFO */
