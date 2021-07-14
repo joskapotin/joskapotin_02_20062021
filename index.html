@@ -14,10 +14,10 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav>
-      <ul class="main-navigation">
-        <li class="menu-item-logo">
+  <header class="site-header">
+    <nav class="primary-navigation">
+      <ul class="menu-wrapper">
+        <li class="menu-item menu-item-logo">
           <a href="/">
             <!-- <img src="images/logo/Reservia.png" alt="Reservia" /> -->
 
@@ -27,13 +27,13 @@
 
           </a>
         </li>
-        <li class="menu-item-subscribe">
+        <li class="menu-item menu-item-subscribe">
           <a href="#">S'inscrire</a>
         </li>
-        <li class="menu-item-hebergements">
+        <li class="menu-item menu-item-hebergements">
           <a href="#hebergements">Hébergements</a>
         </li>
-        <li class="menu-item-activites">
+        <li class="menu-item menu-item-activites">
           <a href="#activites">Activités</a>
         </li>
       </ul>
@@ -43,19 +43,19 @@
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
-      <section class="search-form">
-        <form action="#" method="post" name="location-search">
+      <div class="section-search__form-wrapper">
+        <form action="#" method="post" name="location-search" class="section-search__form">
           <label for="location">
             <i class="fas fa-map-marker-alt"></i>
           </label>
           <input id="location" type="text" name="location" value="Marseille, France" aria-label="Search" />
-          <button type="submit"><i class="fas fa-search"></i><span class="btn-text">Rechercher</span></button>
+          <button type="submit"><span class="btn-icon"><i class="fas fa-search"></i></span><span class="btn-text">Rechercher</span></button>
         </form>
-      </section>
+      </div>
 
-      <section class="filters">
+      <div class="section-search__filters-wrapper">
         <h2>Filtres</h2>
-        <ul class="list-filters">
+        <ul class="section-search__filters">
           <li>
             <button class="btn-filter">
               <span class="btn-icon">
@@ -88,23 +88,23 @@
             </button>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="search-info">
+      <div class="section-search__info-wrapper">
         <span class="fa-stack">
           <i class="far fa-circle fa-stack-2x"></i>
           <i class="fas fa-info fa-stack-1x"></i>
         </span>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </section>
+      </div>
     </section><!-- END OF .section-search -->
   </header>
 
   <main class="main-content">
-    <section id="hebergements" class="section-hebergements">
+    <section id="hebergements" class="main-section section-hebergements">
       <h2 class="section-title">Hébergements à Marseille</h2>
 
-      <div class="posts-hebergements">
+      <div class="posts posts-hebergements">
         <article class="post post-hebergements">
           <a href="#">
             <div class="post-thumbnail">
@@ -270,10 +270,10 @@
       <span class="read-more"><a href="#">Afficher plus</a></span>
     </section><!-- END OF .section-hebergements -->
 
-    <section id="activites" class="section section-activites">
+    <section id="activites" class="main-section section-activites">
       <h2 class="section-title">Activités à Marseille</h2>
 
-      <div class="posts-activities">
+      <div class="posts posts-activities">
         <article class="post post-activites post-id-1">
           <a href="#">
             <div class="post-thumbnail">
@@ -410,11 +410,11 @@
       </div>
     </section><!-- END OF .section-activites -->
 
-    <aside>
-      <section class="section section-populars">
+    <aside class="aside">
+      <section class="main-section section-populars">
         <h2 class="section-title">Les plus populaires<i class="fas fa-chart-line"></i></h2>
 
-        <div class="posts-popular">
+        <div class="posts posts-popular">
           <article class="post post-popular">
             <a href="#">
               <div class="post-thumbnail">
@@ -505,7 +505,7 @@
     </aside>
   </main>
 
-  <footer class="page-footer">
+  <footer class="site-footer">
     <div class="footer-content">
       <section>
         <h4>A propos</h4>
