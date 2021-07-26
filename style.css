@@ -237,7 +237,7 @@ button {
 /* SEARCH FORM */
 .section-search__form-wrapper form {
     position: relative;
-    display: flexbox;
+    display: flex;
     align-items: center;
 }
 
