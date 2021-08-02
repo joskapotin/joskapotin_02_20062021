@@ -11,8 +11,7 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
----
-
+```
 De : Loïc
 
 À : Vous
@@ -41,13 +40,11 @@ Contraintes techniques
 Si tu as des questions n’hésite pas à m’écrire.
 
 Bonne journée!
-
----
+```
 
 Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous apporter des précisions !
 
----
-
+```
 De : Sarah
 
 À : Vous
@@ -71,8 +68,7 @@ J’espère que les premiers éléments partagés par Loïc te semblent clairs !
 À ta disposition pour en discuter ! 
 
 Sarah
-
----
+```
 
 ## Compétences évaluées
 
