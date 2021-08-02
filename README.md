@@ -11,7 +11,7 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
-```
+***
 De : Loïc
 
 À : Vous
@@ -40,11 +40,11 @@ Contraintes techniques
 Si tu as des questions n’hésite pas à m’écrire.
 
 Bonne journée!
-```
 
+***
 Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous apporter des précisions !
 
-```
+***
 De : Sarah
 
 À : Vous
@@ -65,10 +65,11 @@ J’espère que les premiers éléments partagés par Loïc te semblent clairs !
 * Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu.
 * N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes de code. C’est hyper important quand on travaille en équipe. Nous on utilise GitKraken comme client Git, c'est plus sympa qu'une console, mais tu fais comme tu veux. Ensuite il faut que tu déploies la page sur GitHub Pages ou GitLab Pages comme tu préfères.
 
-À ta disposition pour en discuter ! 
+À ta disposition pour en discuter !
 
 Sarah
-```
+
+***
 
 ## Compétences évaluées
 
