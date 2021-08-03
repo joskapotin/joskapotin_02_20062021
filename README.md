@@ -7,7 +7,7 @@ Enfin, vous avez trouvé votre premier stage en tant que développeur web chez R
 
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
 
-![Desktop design](images/desktop-design-min.png)
+![Desktop design](mission/desktop-design-min.png)
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
